@@ -7,7 +7,7 @@ function NewInventoryForm(props){
   function handleNewInventoryFormSubmission(event) {
     event.preventDefault();
     props.onNewInventoryCreation({
-      item: event.target.name.value, 
+      item: event.target.item.value, 
       weight: event.target.weight.value, 
       description: event.target.description.value, 
       id: v4()
@@ -18,11 +18,11 @@ function NewInventoryForm(props){
     <React.Fragment>
       <form onSubmit={handleNewInventoryFormSubmission}>
         <input
-          type="text"
+          // type="text"
           name="item"
           placeholder="Item Name" />
         <input
-          type="text"
+          // type="text"
           name="weight"
           placeholder="lbs" />
         <textarea
