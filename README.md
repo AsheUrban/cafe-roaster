@@ -49,9 +49,7 @@ You are only expected to add CREATE and READ functionality, though you are welco
 
 ## Known Bugs
 
-* _Words not equal to yes or no will advance the prompts_
-* _Very little exception handling on responses in Console UI_
-* _No combined total for bread and pastries is read_
+* _Weight cannot be decremented per the instructions._
 
 ## License
 
@@ -63,7 +61,9 @@ _Please contact me with any questions or contribuitions, ashe@goldentongue.com_
 
 Copyright(c) July 2022 Ashe Urban
 
-// Auto-generated when using Create React App
+
+// The Below content is auto-generated when using Create React App
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
