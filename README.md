@@ -49,7 +49,8 @@ You are only expected to add CREATE and READ functionality, though you are welco
 
 ## Known Bugs
 
-* _Weight cannot be decremented per the instructions._
+* _Weight cannot be decremented per the instructions. Currently console.logging 130 - 1 over and over._
+
 
 ## License
 

@@ -41,12 +41,10 @@ class InventoryControl extends React.Component {
   }
 
   //WIP method for decrementing weight.   
-  handleIncrementingInventoryWeight = (weight) => { // can we use two props here?
+  handleIncrementingInventoryWeight = (weight) => { 
     const inventoryWeight = this.state.selectedInventory.weight -1;
         console.log(inventoryWeight);
-      // } else {
-      //   // return the weight -1
-      // }
+        this.setState({inventoryWeight: inventoryWeight});
   }
 
   render(){
