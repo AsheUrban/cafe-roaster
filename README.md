@@ -1,3 +1,69 @@
+# Week 1 Million Independent Project: Cafe Roaster Inventory
+
+#### A simple react based web application that can decrement a counter by 1.
+
+#### By Ashe Urban
+
+## Technologies Used
+
+* _JavaScript_
+* _React_
+* _CSS_
+* _JSX_
+* _Markdown_
+
+## Description
+
+_Build an application in React that tracks inventory for a local business. We're going to keep this simple: you'll pick one inventory item and track how much of it is remaining as it gets sold or given away. There are a lot of themes to choose from, and you can create your own as long as you're able to track the remaining amount of an inventory item and meet the objectives._
+
+_Here's the challenge:_ build a react web app that has create-read functionality and can "sell" 1lb of beans at a time and keep tract of inventory.
+
+_Link to assignment:_ https://epicenter.epicodus.com/courses/969/code_reviews/6777
+
+### Cafe Roaster
+At our coffee shop, we sell coffee beans in 1-pound servings, and we get our coffee delivered in large burlap sacks. Here are the details:
+
+* we sell multiple types of coffee beans, each in different burlap sacks
+* one burlap sack contains 130 pounds of coffee beans
+* every sale decrements one pound of coffee beans from the burlap sack, until it is empty
+
+Before getting started, plan out your application and draw a component tree or component diagram that shows the structure of your components. This is a requirement for the project and should be included in your README. You may draw the structure on a piece of paper and take a picture of it or use an application like https://www.draw.io/.
+
+### ADD IMAGES OF DIAGRAMS
+
+You are only expected to add CREATE and READ functionality, though you are welcome to implement full CRUD. Here are some user stories to get you started. The application should have the following functionality:
+
+* As a user, I want to see a list/menu of all available types of coffee beans.
+* For each item, I want to see its name, origin, price, and roast (light, medium, or dark) of the coffee bean. (You are welcome to include anything additional that is relevant to the product your store carries.)
+* As a user, I want to submit a form to add a new burlap sack of coffee to the inventory.
+* As a user, I want to be able to click on a burlap sack to see its detail page.
+* As a user, I want to see how many pounds of coffee beans are left in a burlap sack. A burlap sack has roughly 130 pounds.
+* As a user, I want to be able to click a button to sell a pound of coffee beans. This should decrease the number of pounds left by 1. The number of pounds in a sack of coffee beans should not be able to go below 0.
+
+## Setup/Installation Requirements
+
+* _clone or download responsitory to your local_
+* _cd into Cafe Roaster and run npm install_
+* _npm run build_
+* _npm run start_
+
+## Known Bugs
+
+* _Words not equal to yes or no will advance the prompts_
+* _Very little exception handling on responses in Console UI_
+* _No combined total for bread and pastries is read_
+
+## License
+
+* MIT
+
+## Contact Information
+
+_Please contact me with any questions or contribuitions, ashe@goldentongue.com_
+
+Copyright(c) July 2022 Ashe Urban
+
+// Auto-generated when using Create React App
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
