@@ -29,12 +29,6 @@ class InventoryControl extends React.Component {
 
   handleAddingNewInventoryToList = (newInventory) => {
     const newMainInventoryList = this.state.mainInventoryList.concat(newInventory);
-    this.setState({mainInventoryList: newMainInventoryList,
-                  formVisibleOnPage: false });
-  }
-
-  handleAddingNewInventoryToList = (newInventory) => {
-    const newMainInventoryList = this.state.mainInventoryList.concat(newInventory);
     this.setState({
       mainInventoryList: newMainInventoryList,
       formVisibleOnPage: false
@@ -48,10 +42,12 @@ class InventoryControl extends React.Component {
 
   handleIncrementingInventoryWeight = (id) => {
     const inventoryWeight = this.state.mainInventoryList.filter(inventory => inventory.id === id)[0];
-      if(this.state.inventoryWeight != null) {
-        
+      if(this.state.inventoryWeight != null || 0) { // add or 0 because dealing with number?
+        // return the weight
+        console.log(inventoryWeight);
+      } else {
+        // return the weight -1
       }
-
   }
 
   render(){
@@ -61,6 +57,7 @@ class InventoryControl extends React.Component {
     if (this.state.selectedInventory != null) {
       currentlyVisibleState = <InventoryDetail inventory = {this.state.selectedInventory} />
       buttonText = "Return to Inventory List";
+      buttonText = "Change weight"
     }
     else if (this.state.formVisibleOnPage) {
       currentlyVisibleState = <NewInventoryForm onNewInventoryCreation={this.handleAddingNewInventoryToList}  />;
@@ -74,6 +71,7 @@ class InventoryControl extends React.Component {
       <React.Fragment>
         {currentlyVisibleState}
         <button onClick={this.handleClick}>{buttonText}</button> 
+        {/* <button onClick={this.handleIncrementingInventoryWeight}>{buttonText}</button> */}
       </React.Fragment>
     );
   }

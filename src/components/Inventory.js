@@ -16,7 +16,7 @@ function Inventory(props) {
 Inventory.propTypes = {
   item: PropTypes.string,
   description: PropTypes.string,
-  weight: PropTypes.string,
+  weight: PropTypes.number,
   id: PropTypes.string, 
   whenInventoryClicked: PropTypes.func 
 };
