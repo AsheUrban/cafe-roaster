@@ -40,8 +40,9 @@ class InventoryControl extends React.Component {
     this.setState({selectedInventory: selectedInventory});
   }
 
-  handleIncrementingInventoryWeight = (id) => {
-    const inventoryWeight = this.state.mainInventoryList.filter(inventory => inventory.id === id)[0];
+  //WIP method for decrementing weight.   
+  handleIncrementingInventoryWeight = (weight) => {
+    const inventoryWeight = this.state.mainInventoryList.filter(inventory => inventory.weight === weight)[0]; // this is placeholder code for the moment
       if(this.state.inventoryWeight != null || 0) { // add or 0 because dealing with number?
         // return the weight
         console.log(inventoryWeight);
@@ -57,7 +58,7 @@ class InventoryControl extends React.Component {
     if (this.state.selectedInventory != null) {
       currentlyVisibleState = <InventoryDetail inventory = {this.state.selectedInventory} />
       buttonText = "Return to Inventory List";
-      buttonText = "Change weight"
+      // buttonText = "Sell 1 lb"
     }
     else if (this.state.formVisibleOnPage) {
       currentlyVisibleState = <NewInventoryForm onNewInventoryCreation={this.handleAddingNewInventoryToList}  />;
@@ -72,6 +73,7 @@ class InventoryControl extends React.Component {
         {currentlyVisibleState}
         <button onClick={this.handleClick}>{buttonText}</button> 
         {/* <button onClick={this.handleIncrementingInventoryWeight}>{buttonText}</button> */}
+        {/* Not sure how to get it so that only one button at a time shows up on Details page only. */} 
       </React.Fragment>
     );
   }
