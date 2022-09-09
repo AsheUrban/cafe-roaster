@@ -46,6 +46,14 @@ class InventoryControl extends React.Component {
     this.setState({selectedInventory: selectedInventory});
   }
 
+  handleIncrementingInventoryWeight = (id) => {
+    const inventoryWeight = this.state.mainInventoryList.filter(inventory => inventory.id === id)[0];
+      if(this.state.inventoryWeight != null) {
+        
+      }
+
+  }
+
   render(){
     let currentlyVisibleState = null;
     let buttonText = null; 
