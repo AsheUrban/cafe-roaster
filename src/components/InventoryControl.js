@@ -41,14 +41,12 @@ class InventoryControl extends React.Component {
   }
 
   //WIP method for decrementing weight.   
-  handleIncrementingInventoryWeight = (weight) => {
-    const inventoryWeight = this.state.mainInventoryList.filter(inventory => inventory.weight === weight)[0]; // this is placeholder code for the moment
-      if(this.state.inventoryWeight != null || 0) { // add or 0 because dealing with number?
-        // return the weight
+  handleIncrementingInventoryWeight = (weight) => { // can we use two props here?
+    const inventoryWeight = this.state.selectedInventory.weight -1;
         console.log(inventoryWeight);
-      } else {
-        // return the weight -1
-      }
+      // } else {
+      //   // return the weight -1
+      // }
   }
 
   render(){
@@ -56,12 +54,11 @@ class InventoryControl extends React.Component {
     let buttonText = null; 
 
     if (this.state.selectedInventory != null) {
-      currentlyVisibleState = <InventoryDetail inventory = {this.state.selectedInventory} />
+      currentlyVisibleState = <InventoryDetail inventory = {this.state.selectedInventory} onClickingMinusOne = {this.handleIncrementingInventoryWeight} />
       buttonText = "Return to Inventory List";
-      // buttonText = "Sell 1 lb"
     }
     else if (this.state.formVisibleOnPage) {
-      currentlyVisibleState = <NewInventoryForm onNewInventoryCreation={this.handleAddingNewInventoryToList}  />;
+      currentlyVisibleState = <NewInventoryForm onNewInventoryCreation={this.handleAddingNewInventoryToList} />;
       buttonText = "Return to Inventory List";
     } else {
       currentlyVisibleState = <InventoryList inventoryList={this.state.mainInventoryList} onInventorySelection={this.handleChangingSelectedInventory} />;
@@ -72,8 +69,6 @@ class InventoryControl extends React.Component {
       <React.Fragment>
         {currentlyVisibleState}
         <button onClick={this.handleClick}>{buttonText}</button> 
-        {/* <button onClick={this.handleIncrementingInventoryWeight}>{buttonText}</button> */}
-        {/* Not sure how to get it so that only one button at a time shows up on Details page only. */} 
       </React.Fragment>
     );
   }

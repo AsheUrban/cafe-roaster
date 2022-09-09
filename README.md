@@ -1,6 +1,6 @@
 # Week 1 Million Independent Project: Cafe Roaster Inventory
 
-#### A simple react based web application that can decrement a counter by 1.
+#### A simple react based web application that can decrement a weight/counter by 1.
 
 #### By Ashe Urban
 
