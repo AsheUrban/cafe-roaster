@@ -29,7 +29,8 @@ At our coffee shop, we sell coffee beans in 1-pound servings, and we get our cof
 
 Before getting started, plan out your application and draw a component tree or component diagram that shows the structure of your components. This is a requirement for the project and should be included in your README. You may draw the structure on a piece of paper and take a picture of it or use an application like https://www.draw.io/.
 
-### ADD IMAGES OF DIAGRAMS
+_Final Diagram:_ https://photos.app.goo.gl/aWKYPZddRtX6NuPL9
+_Handwritten Notes:_ https://photos.app.goo.gl/vVQw6zMUGCwdKPVSA
 
 You are only expected to add CREATE and READ functionality, though you are welcome to implement full CRUD. Here are some user stories to get you started. The application should have the following functionality:
 
