@@ -51,7 +51,6 @@ You are only expected to add CREATE and READ functionality, though you are welco
 
 * _Weight cannot be decremented per the instructions. Currently console.logging 130 - 1 over and over._
 
-
 ## License
 
 * MIT

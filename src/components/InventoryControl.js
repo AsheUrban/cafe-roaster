@@ -41,7 +41,7 @@ class InventoryControl extends React.Component {
   }
 
   //WIP method for decrementing weight.   
-  handleIncrementingInventoryWeight = (weight) => { 
+  handleDecrementingInventoryWeight = (weight) => { 
     const inventoryWeight = this.state.selectedInventory.weight -1;
         console.log(inventoryWeight);
         this.setState({inventoryWeight: inventoryWeight});
@@ -52,7 +52,7 @@ class InventoryControl extends React.Component {
     let buttonText = null; 
 
     if (this.state.selectedInventory != null) {
-      currentlyVisibleState = <InventoryDetail inventory = {this.state.selectedInventory} onClickingMinusOne = {this.handleIncrementingInventoryWeight} />
+      currentlyVisibleState = <InventoryDetail inventory = {this.state.selectedInventory} onClickingMinusOne = {this.handleDecrementingInventoryWeight} />
       buttonText = "Return to Inventory List";
     }
     else if (this.state.formVisibleOnPage) {
