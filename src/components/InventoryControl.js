@@ -10,7 +10,8 @@ class InventoryControl extends React.Component {
     this.state = {
       formVisibleOnPage: false,
       mainInventoryList: [],
-      selectedInventory: null
+      selectedInventory: null,
+      inventoryWeight: 0
     };
   }
 
@@ -43,8 +44,8 @@ class InventoryControl extends React.Component {
   //WIP method for decrementing weight.   
   handleDecrementingInventoryWeight = (weight) => { 
     const inventoryWeight = this.state.selectedInventory.weight -1; // how to decrement this?
-        console.log(inventoryWeight);
-        this.setState({inventoryWeight: inventoryWeight});
+        console.log(inventoryWeight); // Can see in console
+        this.setState({inventoryWeight: inventoryWeight}); 
   }
 
   render(){

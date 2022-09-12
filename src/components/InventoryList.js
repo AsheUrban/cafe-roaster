@@ -10,6 +10,7 @@ function InventoryList(props) {
         <Inventory 
           whenInventoryClicked={props.onInventorySelection}
           weight={inventory.weight}
+          inventoryWeight={inventory.inventoryWeight}
           item={inventory.item}
           description={inventory.description}
           id={inventory.id}
