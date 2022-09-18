@@ -50,7 +50,8 @@ You are only expected to add CREATE and READ functionality, though you are welco
 
 ## Known Bugs
 
-* _Weight cannot be decremented per the instructions. Currently console.logging 130 - 1 over and over._
+* _Weight cannot be decremented and code has largely been commented out. I have kept it in my project so that I can attempt to fix it in the future._
+* _Styling is inconsistently applied as I was experimenting and playing with how to design in react._
 
 ## License
 
