@@ -8,7 +8,8 @@ function NewInventoryForm(props){
     event.preventDefault();
     props.onNewInventoryCreation({
       item: event.target.item.value, 
-      weight: parseInt(event.target.weight.value), //can I pass inventory weight down from inventory control?
+      weight: parseInt(event.target.weight.value), 
+      inventoryWeight: parseInt(event.target.inventoryWeight.value),//can I pass inventory weight down from inventory control?
       description: event.target.description.value, 
       id: v4()
     });

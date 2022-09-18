@@ -5,7 +5,7 @@ function Inventory(props) {
   return(
     <React.Fragment>
       <div onClick = {() => props.whenInventoryClicked(props.id)}>
-        <h3>Item: {props.item} | Base Weight: {props.weight} | Remaining Weight: {props.InventoryWeight}</h3>
+        <h3>Item: {props.item} | Base Weight: {props.weight} | Remaining Weight: {props.inventoryWeight}</h3>
         <p><em>{props.description}</em></p>
         <hr/>
       </div> 

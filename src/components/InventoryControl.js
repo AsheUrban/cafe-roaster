@@ -11,7 +11,7 @@ class InventoryControl extends React.Component {
       formVisibleOnPage: false,
       mainInventoryList: [],
       selectedInventory: null,
-      inventoryWeight: 0
+      // inventoryWeight: 0
     };
   }
 
@@ -41,12 +41,31 @@ class InventoryControl extends React.Component {
     this.setState({selectedInventory: selectedInventory});
   }
 
-  //WIP method for decrementing weight.   
-  handleDecrementingInventoryWeight = (weight) => { 
-    const inventoryWeight = this.state.selectedInventory.weight -1; // how to decrement this?
-        console.log(inventoryWeight); // Can see in console
-        this.setState({inventoryWeight: inventoryWeight}); 
+  // //WIP method for decrementing weight.   
+  // handleDecrementingInventoryWeight = (weight) => { 
+  //   const inventoryWeight = this.state.selectedInventory.weight -1; // how to decrement this? Loop through map on id
+  //       console.log(inventoryWeight); // Can see in console
+  //       this.setState({inventoryWeight: inventoryWeight}); 
+  // }
+
+  handleDecrementingInventoryWeight = (id) => { 
+    const inventoryWeight = this.state.mainInventoryList.map((inventory) => {
+      if (inventory.id === id) {
+        if(inventory.weight > 0) {
+          return { 
+            ...inventory,
+            weight: inventory.weight -1,
+          };
+        } else {
+          return inventory;
+        }
+      }
+      console.log(inventory.weight)
+      console.log(inventory)
+    })
   }
+    
+
 
   render(){
     let currentlyVisibleState = null;
