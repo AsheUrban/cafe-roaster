@@ -57,11 +57,11 @@ class InventoryControl extends React.Component {
             weight: inventory.weight -1,
           };
         } else {
-          return inventory;
+          return inventory.weight;
         }
       }
       console.log(inventory.weight)
-      console.log(inventory)
+      console.log(inventory.inventoryWeight)
     })
   }
     
