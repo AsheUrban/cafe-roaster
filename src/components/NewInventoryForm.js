@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { v4 } from "uuid";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { v4 } from 'uuid';
 
 function NewInventoryForm(props){
 
@@ -18,17 +18,17 @@ function NewInventoryForm(props){
     <React.Fragment>
       <form onSubmit={handleNewInventoryFormSubmission}>
         <input
-          type="text"
-          name="item"
-          placeholder="Item Name" />
+          type='text'
+          name='item'
+          placeholder='Item Name' />
         <input
-          type="text"
-          name="weight"
-          placeholder="lbs" />
+          type='text'
+          name='weight'
+          placeholder='lbs' />
         <textarea
-          name="description"
-          placeholder="Description." />
-        <button type="submit">Add</button>
+          name='description'
+          placeholder='Description.' />
+        <button type='submit'>Add</button>
       </form>
     </React.Fragment>
   );

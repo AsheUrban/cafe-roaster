@@ -1,7 +1,7 @@
-import React from "react";
-import NewInventoryForm from "./NewInventoryForm";
-import InventoryList from "./InventoryList";
-import InventoryDetail from "./InventoryDetail";
+import React from 'react';
+import NewInventoryForm from './NewInventoryForm';
+import InventoryList from './InventoryList';
+import InventoryDetail from './InventoryDetail';
 
 class InventoryControl extends React.Component {
 
@@ -85,14 +85,14 @@ class InventoryControl extends React.Component {
 
     if (this.state.selectedInventory != null) {
       currentlyVisibleState = <InventoryDetail inventory = {this.state.selectedInventory} onClickingMinusOne = {this.handleDecrementingInventoryWeight} />
-      buttonText = "Return to Inventory List";
+      buttonText = 'Return to Inventory List';
     }
     else if (this.state.formVisibleOnPage) {
       currentlyVisibleState = <NewInventoryForm onNewInventoryCreation={this.handleAddingNewInventoryToList} />;
-      buttonText = "Return to Inventory List";
+      buttonText = 'Return to Inventory List';
     } else {
       currentlyVisibleState = <InventoryList inventoryList={this.state.mainInventoryList} onInventorySelection={this.handleChangingSelectedInventory} />;
-      buttonText = "Add Inventory";
+      buttonText = 'Add Inventory';
     }
 
     return (

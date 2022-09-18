@@ -1,6 +1,6 @@
-import React from "react";
-import Inventory from "./Inventory";
-import PropTypes from "prop-types";
+import React from 'react';
+import Inventory from './Inventory';
+import PropTypes from 'prop-types';
 
 function InventoryList(props) {
   const inventoryListStyles= {

@@ -38,7 +38,7 @@
 }
 
 @font-face {
-  font-family: "Jost";
-  src: local("Jost"),
-    url(../src/font/Jost-Medium.ttf) format("truetype")
+  font-family: 'Jost';
+  src: local('Jost'),
+    url(../src/font/Jost-Medium.ttf) format('truetype')
 }

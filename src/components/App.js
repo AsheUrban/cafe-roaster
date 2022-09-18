@@ -1,6 +1,6 @@
-import React from "react";
-import Header from "./Header";
-import InventoryControl from "./InventoryControl";
+import React from 'react';
+import Header from './Header';
+import InventoryControl from './InventoryControl';
 
 function App() {
 
