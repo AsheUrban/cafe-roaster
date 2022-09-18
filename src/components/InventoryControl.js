@@ -48,22 +48,22 @@ class InventoryControl extends React.Component {
   //       this.setState({inventoryWeight: inventoryWeight}); 
   // }
 
-  handleDecrementingInventoryWeight = (id) => { 
-    const inventoryWeight = this.state.mainInventoryList.map((inventory) => {
-      if (inventory.id === id) {
-        if(inventory.weight > 0) {
-          return { 
-            ...inventory,
-            weight: inventory.weight -1,
-          };
-        } else {
-          return inventory.weight;
-        }
-      }
-      console.log(inventory.weight)
-      console.log(inventory.inventoryWeight)
-    })
-  }
+  // handleDecrementingInventoryWeight = (id) => { 
+  //   const inventoryWeight = this.state.mainInventoryList.map((inventory) => {
+  //     if (inventory.id === id) {
+  //       if(inventory.weight > 0) {
+  //         return { 
+  //           ...inventory,
+  //           weight: inventory.weight -1,
+  //         };
+  //       } else {
+  //         return inventory.weight;
+  //       }
+  //     }
+  //     console.log(inventory.weight)
+  //     console.log(inventory.inventoryWeight)
+  //   })
+  // }
     
 
 

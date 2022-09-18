@@ -18,10 +18,9 @@ function InventoryDetail(props){
   return (
     <React.Fragment>
       <h1>Inventory Detail</h1>
-      <h3>Item: {inventory.item} | Base Weight: {inventory.weight} | Remaining Weight: {inventory.inventoryWeight} </h3>
+      <h3>Item: {inventory.item} | Base Weight: {inventory.weight} </h3>
       <p><em>{inventory.description}</em></p>
-      <button style={fancyBtn} onClick={ props.onClickingMinusOne }>Sell 1 lb</button>
-      <hr/>
+      <button style={fancyBtn} onClick={ props.onClickingMinusOne }>Sell 1 lb</button> { /* this button doesn't work */ }
     </React.Fragment>
   );
 }
