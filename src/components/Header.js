@@ -1,8 +1,17 @@
+
 import React from "react";
 
 function Header(){
+  const headerStyledComponentsStyles = {
+    fontFamily: 'Jost',
+    textAlign: 'center',
+    fontSize: '32px',
+    backgroundColor: 'lavender'
+  }
   return (
-    <h1>Cafe Inventory</h1>
+    <div style= {headerStyledComponentsStyles}>
+      <h1>Inventory</h1>
+    </div>
   );
 }
 

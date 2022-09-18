@@ -68,6 +68,18 @@ class InventoryControl extends React.Component {
 
 
   render(){
+
+    const fancyBtn = {
+      backgroundColor:'lavender',
+      color:'black',
+      fontFamily: 'Jost',
+      fontSize: '20px',
+      padding: '10px 30px',
+      borderRadius: '5px',
+      margin: '10px 0px',
+      cursor:'pointer'
+    };
+
     let currentlyVisibleState = null;
     let buttonText = null; 
 
@@ -86,7 +98,7 @@ class InventoryControl extends React.Component {
     return (
       <React.Fragment>
         {currentlyVisibleState}
-        <button onClick={this.handleClick}>{buttonText}</button> 
+        <button style={fancyBtn} onClick={this.handleClick}>{buttonText}</button> 
       </React.Fragment>
     );
   }
